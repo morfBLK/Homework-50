@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #5ed76f;
+}
+
+.mainBlock {
+    display: flex;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+img {
+    width: 150px;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li {
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: #6bbaba;
+}
+
+footer {
+    background-color: #95b4b4;
+    display: flex;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}

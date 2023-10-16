@@ -26,27 +26,27 @@
     };
 
     const SideBar = () => {
-        return <div>
+        return <nav>
             <ul>
                 <li><a href="#">MAIN</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">PHOTO</a></li>
                 <li><a href="#">ABOUT</a></li>
             </ul>
-        </div>
-    }
+        </nav>
+    };
 
     const NewsCard = props => {
         return (
-            <div>
+            <div className="card">
                 <img src={props.img}/>
                 <h3>{props.title}</h3>
             </div>
-        )
-    }
+        );
+    };
 
     const Content = () => {
-        return <div>
+        return <div className="content">
             <h2>News</h2>
             <NewsCard img="https://data.kaktus.media/image/big/2023-10-16_17-45-43_753839.jpg"
                       title="Мэрия планирует запустить новые автобусы на рынок Дордой"/>
@@ -58,17 +58,17 @@
     }
 
     const Main = () => {
-        return <div>
+        return <div className="mainBlock">
             <SideBar/>
             <Content/>
         </div>
-    }
+    };
 
     const Footer = () => {
-        return <div>
+        return <footer>
             <p>Публичная оферта. ОсОО «Медиа Тренд»</p>
-        </div>
-    }
+        </footer>
+    };
 
     const app = (
         <React.Fragment>
@@ -76,10 +76,10 @@
             <Main/>
             <Footer/>
         </React.Fragment>
-    )
+    );
 
-    const container = document.getElementById("app")
-    ReactDOM.createRoot(container).render(app)
+    const container = document.getElementById("app");
+    ReactDOM.createRoot(container).render(app);
 
 </script>
 
