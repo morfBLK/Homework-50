@@ -1,0 +1,25 @@
+body {
+    background: url("https://images.unsplash.com/photo-1490650404312-a2175773bbf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+}
+
+.card {
+    margin: 20px;
+    border: 5px solid black;
+    padding: 10px;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 200px;
+}
+
+img {
+    width: inherit;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+}

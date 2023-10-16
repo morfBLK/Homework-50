@@ -18,11 +18,10 @@
 <script type="text/babel">
 
     const FilmCard = props => {
-        return React.createElement("div",
-        React.createElement("img", {src:props.img}, null),
+        return React.createElement("div", {className: "card"},
+            React.createElement("img", {src: props.img}, null),
             React.createElement("h1", null, props.filmName),
             React.createElement("p", null, props.year)
-
         );
     };
 
@@ -45,6 +44,10 @@
             />
         </React.Fragment>
     );
+
+    const container = document.getElementById("app");
+
+    ReactDOM.createRoot(container).render(app);
 
 </script>
 
